@@ -15,9 +15,9 @@ The solution will be a simple web app that can predict if the closing price is g
 
 # Datasets
 I will be creating the data using the free open source APIs mentioned in the previous stock prediction notebook (https://docs.google.com/document/d/1ycGeb1QYKATG6jvz74SAMqxrlek9Ed4RYrzWNhWS-0Q/pub)
-•	Yahoo! Finance: You can directly query for a stock through the web API, or download a dump of .csv files and use them.
-•	Bloomberg API: Multiple APIs available, including Python.
-•	Quandl: Also multiple APIs, including Python.
+-	Yahoo! Finance: You can directly query for a stock through the web API, or download a dump of .csv files and use them.
+-	Bloomberg API: Multiple APIs available, including Python.
+-	Quandl: Also multiple APIs, including Python.
 I will download the csv dump for training the data and will try to extract the stock price using the API for the stock to predict if the stock should be a good buy for today or not.
 Solution Statement
 I will be using LSTM model to predict boolean (greater or less than) for the AAPL stock ticker. The input data will consist of the OPEN, CLOSE, VOLUME, HIGH, LOW of previous day and the OPEN of the current day. The output will be a Boolean value which will tell if the stock is going to be higher or lower than the open price today.
@@ -45,5 +45,6 @@ b.	Volatility
 
 # Learning Resources
 As mentioned in the original stock price prediction notebook:
-•	Machine Learning for Trading, Tucker Balch (Georgia Tech and Udacity)
-•	Stocks and Bonds, Khan Academy
+
+-	Machine Learning for Trading, Tucker Balch (Georgia Tech and Udacity)
+-	Stocks and Bonds, Khan Academy
